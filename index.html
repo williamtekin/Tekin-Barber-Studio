@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tekin Barber Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      color: #f0ece4;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      gap: 2.5rem;
+    }
+
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 10vw, 5rem);
+      letter-spacing: 0.08em;
+      color: #f0ece4;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .logo span { color: #c9a84c; }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #c9a84c;
+    }
+
+    .info p {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #666;
+      text-align: center;
+    }
+
+    .info p span { color: #c9a84c; margin: 0 0.5rem; }
+
+    .prices {
+      display: flex;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .price-item { display: flex; flex-direction: column; gap: 0.3rem; }
+
+    .price-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .price-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      color: #c9a84c;
+      line-height: 1;
+    }
+
+    .price-sub {
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 3rem;
+      background: #c9a84c;
+      color: #0a0a0a;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: #e6c97a; }
+
+    .meta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      text-align: center;
+    }
+
+    .meta p {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      color: #444;
+      text-transform: uppercase;
+    }
+
+    .meta a { color: #555; text-decoration: none; transition: color 0.2s; }
+    .meta a:hover { color: #c9a84c; }
+
+    .section-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #444;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      text-align: center;
+    }
+
+    .about img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(30%);
+      border: 1px solid #222;
+    }
+
+    .about p {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .about p span { color: #c9a84c; margin: 0 0.4rem; }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .social-link span { color: #c9a84c; margin: 0 0.2rem; }
+    .social-link:hover { color: #888; }
+    .social-link svg { width: 15px; height: 15px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+  <div class="logo">Tekin<br /><span>Barber</span> Studio</div>
+
+  <div class="divider"></div>
+
+  <div class="info">
+    <p>St. Gallen <span>·</span> Nur mit Termin</p>
+  </div>
+
+  <div class="prices">
+    <div class="price-item">
+      <div class="price-label">Kinder</div>
+      <div class="price-num">15</div>
+      <div class="price-sub">CHF · bis 15 J.</div>
+    </div>
+    <div class="price-item">
+      <div class="price-label">Haarschnitt</div>
+      <div class="price-num">20</div>
+      <div class="price-sub">CHF · ab 16 J.</div>
+    </div>
+  </div>
+
+  <a href="https://cal.com/william-tekin/haarschnitt" target="_blank" class="btn">Termin buchen</a>
+
+  <div class="divider"></div>
+
+  <div class="meta">
+    <p>Schoretshuebstrasse 35 · 9015 St. Gallen</p>
+    <p><a href="tel:+41791082757">+41 79 108 27 57</a></p>
+    <p><a href="mailto:tekinbarberstudio@gmail.com">tekinbarberstudio@gmail.com</a></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="about">
+    <p class="section-label">Über mich</p>
+    <img src="William Tekin Barber.png" alt="William Tekin" />
+    <p>William Tekin <span>·</span> 17 Jahre <span>·</span> 2+ Jahre Erfahrung</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="socials">
+    <p class="section-label">Socials</p>
+    <a href="https://instagram.com/tekin_barberstudio" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      Instagram <span>·</span> @tekin_barberstudio
+    </a>
+    <a href="https://tiktok.com/@tekin_barberstudio" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+      </svg>
+      TikTok <span>·</span> @tekin_barberstudio
+    </a>
+  </div>
+
+</body>
+</html>
