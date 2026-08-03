@@ -14,6 +14,7 @@
 
     body {
       background-color: #0a0a0a;
+      /* DESKTOP HINTERGRUND */
       background-image: 
         linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
         url('TekinBarberStudio.jpg');
@@ -223,25 +224,27 @@
     .social-link span { color: #c9a84c; }
 
     /* =================================================== */
-    /* MOBIL-OPTIMIERUNG (Responsive Design für Smartphones) */
+    /* MOBILE HINTERGRUND & LAYOUT (für Smartphones)       */
     /* =================================================== */
     @media (max-width: 768px) {
       body {
         padding: 1.5rem 0.8rem;
-        /* Schaltet 'fixed' aus (wichtig für iOS) & richtet das Bild besser aus */
+        /* Hier wird auf das Mobile-Bild umgestellt */
+        background-image: 
+          linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
+          url('TBS_Mobile.jpg'); 
         background-attachment: scroll;
-        background-position: center top; 
+        background-position: center center; 
       }
 
       .container {
         padding: 2rem 1rem;
         gap: 1.8rem;
-        /* Noch etwas mehr Transparenz auf Mobilgeräten */
-        background: rgba(10, 10, 10, 0.2); 
+        background: rgba(10, 10, 10, 0.25); 
       }
 
       .prices {
-        flex-direction: row; /* Preise bleiben nebeneinander, skalieren aber sauber */
+        flex-direction: row;
       }
 
       .price-item {
