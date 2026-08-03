@@ -14,12 +14,12 @@
 
     body {
       background-color: #0a0a0a;
-      /* Sehr dezentes Overlay – der Shop im Hintergrund bleibt fast komplett klar */
       background-image: 
-        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.35) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
         url('TekinBarberStudio.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: center center;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       color: #ffffff;
       font-family: 'DM Sans', sans-serif;
@@ -29,8 +29,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 3rem 1.5rem;
-      gap: 2.5rem;
+      padding: 3rem 1rem;
     }
 
     .container {
@@ -39,20 +38,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2.2rem;
-      /* Hohe Transparenz & minimaler Blur für volle Sichtbarkeit des Shops */
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      background: rgba(10, 10, 10, 0.25);
+      gap: 2rem;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      background: rgba(10, 10, 10, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 20px;
-      padding: 3rem 2rem;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      padding: 2.5rem 1.5rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     }
 
     .logo {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.2rem, 12vw, 5.5rem);
+      font-size: clamp(3rem, 11vw, 5.2rem);
       letter-spacing: 0.08em;
       color: #ffffff;
       text-align: center;
@@ -61,9 +59,7 @@
       text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
     }
 
-    .logo span {
-      color: #c9a84c;
-    }
+    .logo span { color: #c9a84c; }
 
     .divider {
       width: 50px;
@@ -81,14 +77,11 @@
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
     }
 
-    .info p span {
-      color: #c9a84c;
-      margin: 0 0.5rem;
-    }
+    .info p span { color: #c9a84c; margin: 0 0.5rem; }
 
     .prices {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.2rem;
       width: 100%;
       justify-content: center;
     }
@@ -98,27 +91,24 @@
       flex-direction: column;
       align-items: center;
       gap: 0.4rem;
-      background: rgba(0, 0, 0, 0.45);
-      padding: 1.2rem 1.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.2rem 1rem;
       border-radius: 12px;
       border: 1px solid rgba(201, 168, 76, 0.4);
       flex: 1;
       max-width: 220px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 
     .price-label {
       font-size: 0.7rem;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #eee;
-      font-weight: 500;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
     }
 
     .price-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.6rem;
+      font-size: 2.5rem;
       color: #c9a84c;
       line-height: 1;
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
@@ -129,7 +119,6 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #ddd;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
     }
 
     .btn {
@@ -143,18 +132,14 @@
       text-decoration: none;
       font-size: 0.85rem;
       font-weight: 700;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       border-radius: 8px;
       transition: all 0.3s ease;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .btn:hover {
-      background: #e6c97a;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(201, 168, 76, 0.6);
-    }
+    .btn:hover { background: #e6c97a; }
 
     .meta {
       display: flex;
@@ -166,25 +151,13 @@
 
     .meta p {
       font-size: 0.78rem;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       color: #ffffff;
       text-transform: uppercase;
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
-      font-weight: 400;
     }
 
-    .meta a {
-      color: #c9a84c;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
-    }
-
-    .meta a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
+    .meta a { color: #c9a84c; text-decoration: none; }
 
     .section-label {
       font-size: 0.68rem;
@@ -192,7 +165,6 @@
       text-transform: uppercase;
       color: #eee;
       margin-bottom: 0.4rem;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
     }
 
     .about {
@@ -220,10 +192,7 @@
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
     }
 
-    .about p span {
-      color: #c9a84c;
-      margin: 0 0.4rem;
-    }
+    .about p span { color: #c9a84c; margin: 0 0.4rem; }
 
     .socials {
       display: flex;
@@ -243,42 +212,40 @@
       text-transform: uppercase;
       color: #ffffff;
       text-decoration: none;
-      transition: all 0.2s;
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(0, 0, 0, 0.5);
       padding: 0.75rem 1.2rem;
       border-radius: 6px;
       width: 100%;
       max-width: 280px;
       border: 1px solid rgba(255, 255, 255, 0.15);
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
     }
 
-    .social-link span {
-      color: #c9a84c;
-    }
+    .social-link span { color: #c9a84c; }
 
-    .social-link:hover {
-      background: rgba(201, 168, 76, 0.25);
-      border-color: rgba(201, 168, 76, 0.6);
-    }
-
-    .social-link svg {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-    }
-
-    @media (max-width: 480px) {
-      .prices {
-        flex-direction: column;
-        align-items: center;
+    /* =================================================== */
+    /* MOBIL-OPTIMIERUNG (Responsive Design für Smartphones) */
+    /* =================================================== */
+    @media (max-width: 768px) {
+      body {
+        padding: 1.5rem 0.8rem;
+        /* Schaltet 'fixed' aus (wichtig für iOS) & richtet das Bild besser aus */
+        background-attachment: scroll;
+        background-position: center top; 
       }
-      .price-item {
-        width: 100%;
-        max-width: 100%;
-      }
+
       .container {
-        padding: 2rem 1.2rem;
+        padding: 2rem 1rem;
+        gap: 1.8rem;
+        /* Noch etwas mehr Transparenz auf Mobilgeräten */
+        background: rgba(10, 10, 10, 0.2); 
+      }
+
+      .prices {
+        flex-direction: row; /* Preise bleiben nebeneinander, skalieren aber sauber */
+      }
+
+      .price-item {
+        padding: 1rem 0.5rem;
       }
     }
   </style>
