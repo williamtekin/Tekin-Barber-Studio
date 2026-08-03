@@ -16,7 +16,7 @@
       background-color: #0a0a0a;
       /* DESKTOP HINTERGRUND */
       background-image: 
-        linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%),
         url('TekinBarberStudio.jpg');
       background-size: cover;
       background-position: center center;
@@ -224,23 +224,26 @@
     .social-link span { color: #c9a84c; }
 
     /* =================================================== */
-    /* MOBILE HINTERGRUND & LAYOUT (für Smartphones)       */
+    /* MOBILE OPIMIERUNG: SCHARFER HINTERGRUND & FREIE SICHT */
     /* =================================================== */
     @media (max-width: 768px) {
       body {
-        padding: 1.5rem 0.8rem;
-        /* Hier wird auf das Mobile-Bild umgestellt */
+        padding: 1.2rem 0.6rem;
         background-image: 
-          linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.45) 100%),
+          linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%),
           url('TBS_Mobile.jpg'); 
         background-attachment: scroll;
         background-position: center center; 
       }
 
       .container {
-        padding: 2rem 1rem;
-        gap: 1.8rem;
-        background: rgba(10, 10, 10, 0.25); 
+        padding: 1.8rem 1rem;
+        gap: 1.5rem;
+        /* Blur auf Mobilgeräten komplett ausgeschaltet -> Gestochen scharfer Shop */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(10, 10, 10, 0.2); 
+        border-color: rgba(255, 255, 255, 0.15);
       }
 
       .prices {
@@ -248,7 +251,8 @@
       }
 
       .price-item {
-        padding: 1rem 0.5rem;
+        padding: 0.8rem 0.4rem;
+        background: rgba(0, 0, 0, 0.6); /* Etwas dunkler für beste Lesbarkeit ohne Blur */
       }
     }
   </style>
